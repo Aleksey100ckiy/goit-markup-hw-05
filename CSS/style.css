@@ -385,7 +385,7 @@ transition: fill var(--transition-dur-and-func);
     line-height: 1.62;
     background-color: var(--portfolio-bottom-color);
     color: var(--titles-colour);
-    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
 
 .portfolio-button:hover,
@@ -452,11 +452,13 @@ transition: fill var(--transition-dur-and-func);
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: var(--transition-dur-and-func);
     transform: translate(-50%, -50%);
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
 }
+
 .modal-close-btm {
     position: absolute;
     top: 8px;
@@ -470,6 +472,9 @@ transition: fill var(--transition-dur-and-func);
     padding: 0;
     background-color: transparent;
     border: 1px solid #303030;
+}
+.modal-close-btm:hover {
+cursor: pointer;
 }
 /* ------------------------footer----------------------- */
 .block{
@@ -651,13 +656,14 @@ margin-bottom: 9px;
 }
 
 .overlay {
+    display: flex;
+    align-items: center;
     position: absolute;
-    font-family: 'Roboto'
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    padding-top: 63px;
 }
 .engaged-img-wrapper{
     position: relative;
@@ -674,14 +680,14 @@ margin-bottom: 9px;
     overflow: auto;
 }
 .engaged-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    text-align: center;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-style: normal;
-    padding-top: 27px;
-    padding-bottom: 27px;
 }
